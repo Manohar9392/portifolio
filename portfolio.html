@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manohar Reddy Valluri - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: auto;
+            font-family: -apple-system, BlinkMacSystemFont, 'Lato', sans-serif;
+            overflow: auto;
+            background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+            animation: gradient 15s ease infinite;
+            background-size: 400% 400%;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .wave {
+            background: rgb(255 255 255 / 25%);
+            border-radius: 1000% 1000% 0 0;
+            position: fixed;
+            width: 200%;
+            height: 12em;
+            animation: wave 10s -3s linear infinite;
+            transform: translate3d(0, 0, 0);
+            opacity: 0.8;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .wave:nth-of-type(2) {
+            bottom: -1.25em;
+            animation: wave 18s linear reverse infinite;
+            opacity: 0.8;
+        }
+
+        .wave:nth-of-type(3) {
+            bottom: -2.5em;
+            animation: wave 20s -1s reverse infinite;
+            opacity: 0.9;
+        }
+
+        @keyframes wave {
+            2% {
+                transform: translateX(1);
+            }
+            25% {
+                transform: translateX(-25%);
+            }
+            50% {
+                transform: translateX(-50%);
+            }
+            75% {
+                transform: translateX(-25%);
+            }
+            100% {
+                transform: translateX(1);
+            }
+        }
+
+        /* Ensure content is readable over the vibrant background */
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+        }
+
+        section {
+            position: relative;
+            z-index: 1;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Wave Background -->
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Manohar Reddy Valluri</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-[#48e2e6] transition">Home</a></li>
+                <li><a href="#about" class="hover:text-[#48e2e6] transition">About</a></li>
+                <li><a href="#skills" class="hover:text-[#48e2e6] transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-[#48e2e6] transition">Projects</a></li>
+                <li><a href="#certificates" class="hover:text-[#48e2e6] transition">Certificates</a></li>
+                <li><a href="#achievements" class="hover:text-[#48e2e6] transition">Achievements</a></li>
+                <li><a href="#education" class="hover:text-[#48e2e6] transition">Education</a></li>
+                <li><a href="#contact" class="hover:text-[#48e2e6] transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center">
+        <div class="text-center">
+            <img src="WhatsApp Image 2025-04-29 at 19.56.35_cc1f2bca.jpg" alt="Profile Photo" class="rounded-full w-32 h-32 mx-auto mb-4">
+            <h1 class="text-5xl font-bold mb-4">Manohar Reddy Valluri</h1>
+            <p class="text-xl mb-6">Computer Science & Engineering Student | Data Science Enthusiast</p>
+            <a href="#contact" class="bg-[#48e2e6] text-black px-6 py-2 rounded-full hover:bg-[#3cc7cb] transition">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10">About Me</h2>
+            <p class="text-lg text-center max-w-3xl mx-auto">
+                I am a passionate Computer Science and Engineering student at Lovely Professional University, with a strong interest in data science and machine learning. Proficient in C++, Python, R, SQL, and web development, I enjoy solving complex problems and building user-friendly applications. My projects and certifications reflect my dedication to continuous learning and innovation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Languages</h3>
+                    <p>C++, C, Python, R</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Frameworks</h3>
+                    <p>HTML, CSS</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Tools/Platforms</h3>
+                    <p>MySQL, Tableau, Microsoft Excel, LeetCode</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Soft Skills</h3>
+                    <p>Problem-Solving, Time Management, Adaptability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 rounded-lg">
+                    <img src="snake game.jpg" alt="Snake Game" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Snake Game</h3>
+                    <p class="text-sm mb-2">October 2024</p>
+                    <p class="mb-4">Designed a Snake game using Python's Turtle graphics with smooth controls, collision detection, and score tracking. Enhanced gameplay with dynamic movement and visual effects.</p>
+                    <p class="text-sm"><strong>Technologies:</strong> Turtle Graphics, OOP</p>
+                    <a href="https://github.com/Manohar9392" target="_blank" class="text-[#48e2e6] hover:underline">View on GitHub</a>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <img src="sports club.jpg" alt="Movies Project" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">IMDb Movie Ratings Analysis</h3>
+                    <p class="text-sm mb-2">July 2024</p>
+                    <p class="mb-4">Developed an IMDb movie rating analysis project using SQL queries to extract, filter, and analyze movie data. Optimized queries for efficient data retrieval.</p>
+                    <p class="text-sm"><strong>Technologies:</strong> SQL, Database Management</p>
+                    <a href="Manohar9392" target="_blank" class="text-[#48e2e6] hover:underline">View on GitHub</a>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <img src="movies .jpg" alt="Sports Club" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Sports Club Website</h3>
+                    <p class="text-sm mb-2">March 2023</p>
+                    <p class="mb-4">Designed a responsive sports club website with interactive features for event updates, membership details, and contact forms.</p>
+                    <p class="text-sm"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/Manohar9392" target="_blank" class="text-[#48e2e6] hover:underline">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10">Certificates</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 rounded-lg">
+                    <img src="nptel.jpg" alt="machine Learning" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Introduction to Machine Learning</h3>
+                    <p class="text-sm mb-2">NPTEL, Aug-Oct 2024</p>
+                    <p>Completed a comprehensive course on machine learning fundamentals.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <img src="board infinity.jpg" alt="dbms" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Database Management System with SQL</h3>
+                    <p class="text-sm mb-2">Board Infinity, May-Jul 2024</p>
+                    <p>Mastered SQL and database management techniques.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <img src="mastering dsa.jpg" alt="Mastering Dsa" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Mastering DSA with C++</h3>
+                    <p class="text-sm mb-2">Udemy, Jan-Mar 2025</p>
+                    <p>Completed all the fundamentals of DSA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10">Achievements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Dean's Top 10% Students</h3>
+                    <p>Recognized for academic excellence and extracurricular activities at Lovely Professional University.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Designed a Fingerprint Sensor</h3>
+                    <p>Explored the mechanism of fingerprint sensors at an IoT workshop.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">2nd Place in Vedic Maths Quiz</h3>
+                    <p>Secured second place in a district-level Vedic Maths competition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10">Education</h2>
+            <div class="space-y-6">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Lovely Professional University</h3>
+                    <p class="text-sm mb-2">B.Tech in Computer Science and Engineering, CGPA: 8.56</p>
+                    <p>Punjab, India, Since August 2022</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">ViswaSai Junior College</h3>
+                    <p class="text-sm mb-2">Intermediate, Percentage: 97.2%</p>
+                    <p>Nellore, Andhra Pradesh, April 2020 - March 2022</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Vijnana Vihara English Medium High School</h3>
+                    <p class="text-sm mb-2">Matriculation, Percentage: 96%</p>
+                    <p>Vijayawada, Andhra Pradesh, April 2016 - March 2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10">Contact</h2>
+            <div class="text-center">
+                <p class="text-lg mb-4">Email: <a href="mailto:vmanureddy428@gmail.com" class="text-[#48e2e6] hover:underline">vmanureddy428@gmail.com</a></p>
+                <p class="text-lg mb-4">Mobile: <a href="tel:+919392576658" class="text-[#48e2e6] hover:underline">+91-9392576658</a></p>
+                <p class="text-lg mb-4">LinkedIn: <a href="https://www.linkedin.com/in/valluri-manohar-reddy/" target="_blank" class="text-[#48e2e6] hover:underline">valluri-manohar-reddy</a></p>
+                <p class="text-lg mb-4">GitHub: <a href="https://github.com/Manohar9392" target="_blank" class="text-[#48e2e6] hover:underline">Manohar9392</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
